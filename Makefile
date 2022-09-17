@@ -1,6 +1,7 @@
 OUT_DIR=output
 IN_DIR=markdown
-STYLES_DIR=base
+STYLES_DIR=style
+STYLE=base
 
 all: html pdf
 
