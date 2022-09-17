@@ -19,8 +19,8 @@ html: init
 pdf: html
 	for f in $(OUT_DIR)/*.html; do \
 		FILE_NAME=`basename $$f | sed 's/.html//g'`; \
-		echo $$FILE_NAME.pdf; \
-		wkhtmltopdf $$FILE_NAME.html $$FILE_NAME.pdf
+		echo $$FILE_NAME.html; \
+		wkhtmltopdf $$f $$FILE_NAME.pdf; \
 	done
 
 init: dir
