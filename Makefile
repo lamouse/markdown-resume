@@ -16,7 +16,7 @@ html: init
 			--metadata pagetitle=$$FILE_NAME;\
 	done
 
-pdf: init
+pdf: html
 	for f in $(OUT_DIR)/*.html; do \
 		FILE_NAME=`basename $$f | sed 's/.html//g'`; \
 		echo $$FILE_NAME.pdf; \
